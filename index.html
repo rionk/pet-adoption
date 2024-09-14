@@ -63,9 +63,9 @@
         <div class="pet-filter">
             <p>
                 Show me:
-                <button>All Pets</button>
-                <button>Only Dogs</button>
-                <button>Only Cats</button>
+                <button data-filter="all">All Pets</button>
+                <button data-filter="dog">Only Dogs</button>
+                <button data-filter="cat">Only Cats</button>
             </p>
         </div>
         <div class="list-of-pets">
@@ -81,13 +81,12 @@
 <template id="pet-card-template">
     <div class="pet-card">
         <div class="pet-card-text">
-            <h3>Barksalot</h3>
-            <p class="pet-description">Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery, and playing fetch.
-            </p>
-            <p class="pet-age">2 years old</p>
+            <h3></h3>
+            <p class="pet-description"></p>
+            <p class="pet-age"></p>
         </div>
         <div class="pet-card-photo">
-            <img src="images/pet-1.jpg" alt="">
+            <img src="" alt="">
         </div>
     </div>
 </template>
