@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Adoption 123</title>
+    <title>Pet Adoption</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <div class="top-section-wrapper">
@@ -63,62 +62,33 @@
         <div class="pet-filter">
             <p>
                 Show me:
-                <button>All Pets</button>
-                <button>Only Dogs</button>
-                <button>Only Cats</button>
+                <button data-filter="all">All Pets</button>
+                <button data-filter="dog">Only Dogs</button>
+                <button data-filter="cat">Only Cats</button>
             </p>
         </div>
-        <div class="list-of-pets">
-            <div class="pet-card">
-                <div class="pet-card-text">
-                    <h3>Barksalot</h3>
-                    <p class="pet-description">Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery, and playing fetch.
-                    </p>
-                    <p class="pet-age">2 years old</p>
-                </div>
-                <div class="pet-card-photo">
-                    <img src="images/pet-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="pet-card">
-                <div class="pet-card-text">
-                    <h3>Meowsalot</h3>
-                    <p class="pet-description">Meowsalot is the most talkative cat we’ve ever come across. Constant meowing, chirping and purring!</p>
-                    <p class="pet-age">1 years old</p>
-                </div>
-                <div class="pet-card-photo">
-                    <img src="images/pet-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="pet-card">
-                <div class="pet-card-text">
-                    <h3>Woof</h3>
-                    <p class="pet-description">Woof is a very talkative and sweet pup. She loves beets, plums, cuddles and jumping over low fences.</p>
-                    <p class="pet-age">Less than a year old</p>
-                </div>
-                <div class="pet-card-photo">
-                    <img src="images/pet-3.jpg" alt="">
-                </div>
-            </div>
-            <div class="pet-card">
-                <div class="pet-card-text">
-                    <h3>Purrsloud</h3>
-                    <p class="pet-description">Purrsloud has the loudest and most relaxing purr that’s come through our center. Come hear it yourself.
-                    </p>
-                    <p class="pet-age">4 years old</p>
-                </div>
-                <div class="pet-card-photo">
-                    <img src="images/pet-4.jpg" alt="">
-                </div>
-            </div>
-        </div>
+        <div class="list-of-pets"></div>
     </div>
 </div>
 
 <footer class="site-footer">
-    <p>© 2023 Fake Adoption Center. All rights reserved...</p>
+    <p>© 2023 Fake Adoption Center. All rights reserved.</p>
 </footer>
 
+<template id="pet-card-template">
+    <div class="pet-card">
+        <div class="pet-card-text">
+            <h3></h3>
+            <p class="pet-description"></p>
+            <p class="pet-age"></p>
+        </div>
+        <div class="pet-card-photo">
+            <img src="" alt="">
+        </div>
+    </div>
+</template>
+
+<script src="main.js"></script>
 </body>
 
 </html>

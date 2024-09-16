@@ -209,6 +209,15 @@ body {
     cursor: pointer;
 }
 
+.pet-filter button:hover {
+    color : #7d7d7d;
+}
+
+.pet-filter button.active {
+    color : #475AFF;
+    text-decoration: underline;
+}
+
 @media (min-width: 600px) {
     .pet-filter {
         font-size: 1.375rem;
@@ -237,7 +246,7 @@ body {
 }
 
 .pet-card-text {
-    order: 2;/
+    order: 2;
     padding: 18px 16px;
 }
 
@@ -298,3 +307,4 @@ body {
     margin: 0;
     padding: 0 0 65px 0
 }
+
