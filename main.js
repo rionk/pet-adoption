@@ -40,7 +40,7 @@ function petsArea(){
 	}
 
 	async function getPetData() {
-		const res = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json");
+		const res = await fetch("https://imaginative-strudel-aa5436.netlify.app/.netlify/functions/pets");
 		const petsData = await res.json();
 
 		const template = document.querySelector("#pet-card-template").content;
